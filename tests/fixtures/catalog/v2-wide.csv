@@ -1,0 +1,4 @@
+hospital_name,last_updated_on,version,hospital_location,hospital_address
+Version Two Hospital,2025-01-01,2.0.0,Version Two Hospital,"3 Main Street, Montpelier, VT"
+description,code|1,code|1|type,setting,modifiers,standard_charge|gross,standard_charge|discounted_cash,standard_charge|min,standard_charge|max,standard_charge|Old Payer|Old Plan|negotiated_dollar
+Version two CT,74177,CPT,both,26,900,700,500,850,625

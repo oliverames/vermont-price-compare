@@ -2,9 +2,11 @@
   "name": "vermont-price-compare",
   "version": "1.0.0",
   "private": true,
-  "description": "A static demo for comparing published Vermont healthcare procedure prices.",
+  "description": "A static catalogue for comparing published Vermont healthcare procedure prices.",
   "scripts": {
-    "test": "node --test",
-    "check": "node --check app.js && node --check data.js && node --test"
+    "test": "npm run test:js && npm run test:python",
+    "test:js": "node --test tests/*.test.js",
+    "test:python": "/opt/homebrew/bin/python3 -m unittest discover -s tests -p 'test_*.py'",
+    "check": "node --check app.js && node --check search-worker.js && node --check access-gate.js && npm test"
   }
 }

@@ -1,0 +1,5 @@
+hospital_name,last_updated_on,version,location_name,hospital_address
+Fixture Hospital,2026-08-05,3.0.0,Fixture Hospital,"1 Main Street, Montpelier, VT"
+description,code|1,code|1|type,code|2,code|2|type,setting,billing_class,modifiers,drug_unit_of_measurement,drug_type_of_measurement,standard_charge|gross,standard_charge|discounted_cash,standard_charge|discounted_cash|paid_within_30_days,standard_charge|Payer One|Plan A|negotiated_dollar,standard_charge|min,standard_charge|max
+Fixture colonoscopy,ABC123,CDM,45378,CPT,outpatient,facility,PT,,,1000,800,750,600,550,650
+Fixture local item,LOCAL-2,LOCAL,,,both,professional,,,,45,,,,35,50

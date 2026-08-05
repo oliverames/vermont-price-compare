@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataDate": "2026-08-05",
+  "items": [
+    {
+      "description": "Independent MRI exam",
+      "codes": [{"type": "CPT", "code": "73721"}],
+      "setting": "outpatient",
+      "billingClass": "facility",
+      "modifiers": "TC",
+      "prices": {
+        "gross": 725,
+        "cash": 500,
+        "deidentifiedMin": 410,
+        "deidentifiedMax": 690,
+        "negotiatedMin": 450,
+        "negotiatedMax": 650,
+        "negotiatedCount": 4,
+        "supplementalValues": [
+          {"amount": 600, "label": "Published comparison rate"}
+        ]
+      },
+      "sourcePage": "https://example.test/independent-mri-prices"
+    }
+  ]
+}

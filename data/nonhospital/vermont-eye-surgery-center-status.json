@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "provider": {
+    "id": "vermont-eye-surgery-center",
+    "name": "The Eye Surgery Center",
+    "aliases": [
+      "Vermont Eye Surgery Center",
+      "Vermont Eye Laser surgery center"
+    ],
+    "affiliatedPractice": "New England Vision and Vermont Eye Laser",
+    "facilityType": "ambulatory_surgery_center",
+    "websiteUrl": "https://www.lasermyeyes.com/",
+    "address": {
+      "street": "1100 Hinesburg Road",
+      "city": "South Burlington",
+      "state": "VT",
+      "postalCode": "05403"
+    }
+  },
+  "catalogStatus": {
+    "status": "no_public_full_price_catalog_found",
+    "checkedOn": "2026-08-05",
+    "catalogUrl": null,
+    "finding": "No public full procedure-price catalogue or machine-readable price file was found on the provider's official public website.",
+    "limitation": "This records public material available without a login on the official domain on the check date. It does not prove that no private, unlinked, patient-specific, or payer-specific price list exists."
+  },
+  "audit": {
+    "officialDomain": "www.lasermyeyes.com",
+    "robotsUrl": "https://www.lasermyeyes.com/robots.txt",
+    "sitemapIndexUrl": "https://www.lasermyeyes.com/sitemap_index.xml",
+    "sitemapContentEntriesReviewed": 296,
+    "linkedPublicPdfFilesReviewed": 14,
+    "methods": [
+      "Parsed every content entry in the four official page, post, category, and tag sitemaps.",
+      "Followed same-domain links and reviewed every page whose URL or text matched price, pricing, cost, fee, charge, transparency, chargemaster, machine-readable, CPT, cash, commercial, or Medicare terms.",
+      "Downloaded and text-searched all PDF files linked from the current Patient Forms and Advanced-Technology Implants pages.",
+      "Searched the official domain for price-catalog and machine-readable-file terms."
+    ]
+  },
+  "surfacesChecked": [
+    {
+      "url": "https://www.lasermyeyes.com/lasik-eye-surgery-burlington/lasik-pricing/",
+      "result": "The page says a patient receives an individual price after a screening. It publishes no numeric base price or procedure catalogue."
+    },
+    {
+      "url": "https://www.lasermyeyes.com/patient-information-2/financing/",
+      "result": "The page describes third-party financing and a $200 purchase threshold. The threshold is not a procedure price, and the page contains no catalogue."
+    },
+    {
+      "url": "https://www.lasermyeyes.com/landing/lasik-offer/",
+      "result": "The page advertises $1,000 off LASIK or financing from $99 per month. It does not publish the underlying procedure price or a catalogue."
+    },
+    {
+      "url": "https://www.lasermyeyes.com/cataract-surgery-burlington/eye-surgery-center-2/",
+      "result": "The page makes comparative cost claims but publishes no procedure amounts or catalogue."
+    },
+    {
+      "url": "https://www.lasermyeyes.com/patient-information-2/patient-information/",
+      "result": "The current forms page links 14 public PDFs across patient forms, cataract materials, and lens brochures. None is a full procedure-price catalogue."
+    },
+    {
+      "url": "https://www.lasermyeyes.com/wp-content/uploads/2026/06/NEV-Office-Policy.pdf",
+      "result": "The current office policy states one $50 refraction charge when insurance denies coverage. This isolated office fee is not a procedure-price catalogue."
+    },
+    {
+      "url": "https://www.lasermyeyes.com/cms-hpt.txt",
+      "result": "HTTP 404 on the check date."
+    }
+  ]
+}

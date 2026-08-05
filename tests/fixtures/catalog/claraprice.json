@@ -1,0 +1,30 @@
+{
+  "hospital_name": "Clara Fixture Hospital",
+  "standard_charge_information": [
+    {
+      "description": "Clara fixture medicine",
+      "code_information": [
+        {"code": "J1234", "type": "HCPCS"},
+        {"code": "0099", "type": "CDM"}
+      ],
+      "standard_charges": [
+        {
+          "setting": "both",
+          "billing_class": "facility",
+          "modifier_code": "JW",
+          "minimum": 65,
+          "maximum": 95,
+          "gross_charge": 120,
+          "discounted_cash": 90,
+          "payers_information": [
+            {"payer_name": "Payer Red", "plan_name": "Plan R", "standard_charge_dollar": 70},
+            {"payer_name": "Payer Blue", "plan_name": "Plan B", "standard_charge_dollar": 85}
+          ]
+        }
+      ],
+      "drug_information": {"unit": 10, "type": "UN"}
+    }
+  ],
+  "last_updated_on": "2026-08-05",
+  "version": "3.0.0"
+}

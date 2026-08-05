@@ -1,0 +1,69 @@
+{
+  "aliases": [
+    {
+      "codeType": "CPT",
+      "code": "45378",
+      "preferredName": "Diagnostic colonoscopy without biopsy",
+      "terms": [
+        "colonoscopy",
+        "colon cancer screening",
+        "colon exam",
+        "lower bowel scope"
+      ]
+    },
+    {
+      "codeType": "CPT",
+      "code": "77067",
+      "preferredName": "Screening mammogram, both breasts",
+      "terms": [
+        "mammogram",
+        "screening mammogram",
+        "breast cancer screening"
+      ]
+    },
+    {
+      "codeType": "CPT",
+      "code": "73721",
+      "preferredName": "MRI of a lower-extremity joint without contrast",
+      "terms": [
+        "MRI of knee",
+        "knee MRI",
+        "joint MRI",
+        "lower extremity MRI"
+      ]
+    },
+    {
+      "codeType": "CPT",
+      "code": "70551",
+      "preferredName": "MRI of the brain without contrast",
+      "terms": [
+        "brain MRI",
+        "MRI brain",
+        "head MRI",
+        "brain scan"
+      ]
+    },
+    {
+      "codeType": "CPT",
+      "code": "74177",
+      "preferredName": "CT of abdomen and pelvis with contrast",
+      "terms": [
+        "CT scan",
+        "CT abdomen",
+        "CT pelvis",
+        "CAT scan",
+        "abdominal CT"
+      ]
+    },
+    {
+      "codeType": "CPT",
+      "code": "64721",
+      "preferredName": "Carpal tunnel release surgery",
+      "terms": [
+        "carpal tunnel",
+        "carpal tunnel release",
+        "wrist nerve release"
+      ]
+    }
+  ]
+}

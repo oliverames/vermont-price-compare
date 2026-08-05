@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalog": {"effectiveDate": "2026-02-27"},
+  "procedures": [
+    {
+      "sourceRow": 5,
+      "codeSystem": "CPT",
+      "code": "45378",
+      "description": "COLONOSCOPY",
+      "prices": [
+        {"priceType": "gmsc_medicare_rate", "priceTypeLabel": "GMSC Medicare Rate", "amount": "364.32", "sourceUrl": "https://example.test/gmsc.pdf"},
+        {"priceType": "hopd_medicare_rate", "priceTypeLabel": "HOPD Medicare Rate", "amount": "950.10", "sourceUrl": "https://example.test/gmsc.pdf"},
+        {"priceType": "gmsc_charge", "priceTypeLabel": "GMSC Charge", "amount": "1612.00", "sourceUrl": "https://example.test/gmsc.pdf"},
+        {"priceType": "gmsc_lowest_commercial_rate", "priceTypeLabel": "GMSC Lowest Commercial Rate", "amount": "1085.00", "sourceUrl": "https://example.test/gmsc.pdf"},
+        {"priceType": "gmsc_highest_commercial_rate", "priceTypeLabel": "GMSC Highest Commercial Rate", "amount": "1245.00", "sourceUrl": "https://example.test/gmsc.pdf"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0.0",
+  "provider": {
+    "id": "vermont-open-imaging",
+    "name": "Vermont OPEN Imaging",
+    "facilityType": "independent_diagnostic_imaging_center",
+    "websiteUrl": "https://www.vtopenimaging.com/",
+    "address": {
+      "street": "3000 Williston Road",
+      "city": "South Burlington",
+      "state": "VT",
+      "postalCode": "05403"
+    }
+  },
+  "catalog": {
+    "title": "OPEN Pricing: Transparent, Affordable MRI & CT Costs",
+    "publicationType": "official_pricing_webpage",
+    "extractionStatus": "complete_for_published_price_page",
+    "catalogScope": "Every category ceiling and procedure example with a dollar amount on the current official cost page.",
+    "serviceCatalogCompleteness": "not_claimed_by_source",
+    "serviceCatalogCompletenessNote": "The source publishes four imaging category ceilings and two procedure examples. It does not claim to list every scan the center performs.",
+    "billingScope": "The source says the published prices include the scan and the radiologist interpretation, with no separate charge.",
+    "landingPageUrl": "https://www.vtopenimaging.com/cost",
+    "sourceUrl": "https://www.vtopenimaging.com/cost",
+    "retrievedOn": "2026-08-05",
+    "effectiveDate": null,
+    "effectiveDateBasis": "The official page does not publish an effective or update date.",
+    "recordCount": 6,
+    "pricePointCount": 10,
+    "categoryCeilingRecordCount": 4,
+    "exactCptExampleRecordCount": 2
+  },
+  "priceTypes": [
+    {
+      "id": "published_category_price_ceiling",
+      "label": "Published category price ceiling",
+      "role": "category_ceiling",
+      "note": "This amount applies to a broad imaging category and is not an exact CPT-level price."
+    },
+    {
+      "id": "retail_price_example",
+      "label": "Retail price example",
+      "role": "exact_cpt_example"
+    },
+    {
+      "id": "contracted_rate_example",
+      "label": "Contracted rate example",
+      "role": "illustrative_exact_cpt_example",
+      "note": "The source presents this amount as one example, not a rate available under every contract."
+    },
+    {
+      "id": "illustrative_out_of_pocket_example",
+      "label": "Illustrative out-of-pocket example",
+      "role": "illustrative_patient_cost",
+      "note": "The source states that actual costs vary with coverage."
+    }
+  ],
+  "items": [
+    {
+      "sourceRow": 1,
+      "description": "MRI without contrast, published category ceiling",
+      "codes": [],
+      "setting": "outpatient",
+      "billingClass": "facility_and_professional",
+      "publicationScope": "category",
+      "codeAssignmentStatus": "not_applicable_to_category",
+      "priceBasis": "maximum_published_price",
+      "prices": {
+        "supplementalValues": [
+          {
+            "amount": "1099.00",
+            "label": "Published category price ceiling",
+            "currency": "USD"
+          }
+        ]
+      },
+      "sourcePage": "https://www.vtopenimaging.com/cost"
+    },
+    {
+      "sourceRow": 2,
+      "description": "MRI requiring contrast, published category ceiling",
+      "codes": [],
+      "setting": "outpatient",
+      "billingClass": "facility_and_professional",
+      "publicationScope": "category",
+      "codeAssignmentStatus": "not_applicable_to_category",
+      "priceBasis": "maximum_published_price",
+      "prices": {
+        "supplementalValues": [
+          {
+            "amount": "1799.00",
+            "label": "Published category price ceiling",
+            "currency": "USD"
+          }
+        ]
+      },
+      "sourcePage": "https://www.vtopenimaging.com/cost"
+    },
+    {
+      "sourceRow": 3,
+      "description": "CT without contrast, published category ceiling",
+      "codes": [],
+      "setting": "outpatient",
+      "billingClass": "facility_and_professional",
+      "publicationScope": "category",
+      "codeAssignmentStatus": "not_applicable_to_category",
+      "priceBasis": "maximum_published_price",
+      "prices": {
+        "supplementalValues": [
+          {
+            "amount": "1099.00",
+            "label": "Published category price ceiling",
+            "currency": "USD"
+          }
+        ]
+      },
+      "sourcePage": "https://www.vtopenimaging.com/cost"
+    },
+    {
+      "sourceRow": 4,
+      "description": "CT requiring contrast, published category ceiling",
+      "codes": [],
+      "setting": "outpatient",
+      "billingClass": "facility_and_professional",
+      "publicationScope": "category",
+      "codeAssignmentStatus": "not_applicable_to_category",
+      "priceBasis": "maximum_published_price",
+      "prices": {
+        "supplementalValues": [
+          {
+            "amount": "1599.00",
+            "label": "Published category price ceiling",
+            "currency": "USD"
+          }
+        ]
+      },
+      "sourcePage": "https://www.vtopenimaging.com/cost"
+    },
+    {
+      "sourceRow": 5,
+      "description": "CT of lumbar spine without contrast",
+      "codes": [
+        {
+          "type": "CPT",
+          "code": "72131"
+        }
+      ],
+      "setting": "outpatient",
+      "billingClass": "facility_and_professional",
+      "publicationScope": "exact_cpt_example",
+      "priceBasis": "illustrative_example",
+      "exampleDisclaimer": "The source states that actual costs vary with coverage.",
+      "prices": {
+        "supplementalValues": [
+          {
+            "amount": "1099.00",
+            "label": "Retail price example",
+            "currency": "USD"
+          },
+          {
+            "amount": "890.00",
+            "label": "Contracted rate example",
+            "currency": "USD"
+          },
+          {
+            "amount": "478.00",
+            "label": "Illustrative out-of-pocket example",
+            "currency": "USD"
+          }
+        ]
+      },
+      "sourcePage": "https://www.vtopenimaging.com/cost"
+    },
+    {
+      "sourceRow": 6,
+      "description": "MRI of knee with and without contrast",
+      "codes": [
+        {
+          "type": "CPT",
+          "code": "73723"
+        }
+      ],
+      "setting": "outpatient",
+      "billingClass": "facility_and_professional",
+      "publicationScope": "exact_cpt_example",
+      "priceBasis": "illustrative_example",
+      "exampleDisclaimer": "The source states that actual costs vary with coverage.",
+      "prices": {
+        "supplementalValues": [
+          {
+            "amount": "1799.00",
+            "label": "Retail price example",
+            "currency": "USD"
+          },
+          {
+            "amount": "1575.00",
+            "label": "Contracted rate example",
+            "currency": "USD"
+          },
+          {
+            "amount": "972.50",
+            "label": "Illustrative out-of-pocket example",
+            "currency": "USD"
+          }
+        ]
+      },
+      "sourcePage": "https://www.vtopenimaging.com/cost"
+    }
+  ]
+}

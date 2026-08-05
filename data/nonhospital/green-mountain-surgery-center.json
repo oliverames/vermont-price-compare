@@ -1,0 +1,1464 @@
+{
+  "schemaVersion": "1.0.0",
+  "provider": {
+    "id": "green-mountain-surgery-center",
+    "name": "Green Mountain Surgery Center",
+    "facilityType": "ambulatory_surgery_center",
+    "websiteUrl": "https://greenmountainsurgery.com/",
+    "address": {
+      "street": "593 Hercules Drive",
+      "city": "Colchester",
+      "state": "VT",
+      "postalCode": "05446"
+    }
+  },
+  "catalog": {
+    "title": "Compare Our Prices",
+    "publicationType": "price_comparison_pdf",
+    "extractionStatus": "complete_for_published_document",
+    "catalogScope": "Every procedure row and price column in the current one-page comparison PDF.",
+    "serviceCatalogCompleteness": "not_claimed_by_source",
+    "serviceCatalogCompletenessNote": "The source does not state that this comparison table contains every service the center performs.",
+    "billingScope": "Green Mountain Surgery Center facility use and necessary supplies only. Surgeon, anesthesia, laboratory, and pathology services may be billed separately.",
+    "landingPageUrl": "https://greenmountainsurgery.com/billing-insurance.php",
+    "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+    "retrievedOn": "2026-08-05",
+    "effectiveDate": "2026-02-27",
+    "effectiveDateBasis": "The PDF footer says \"Updated 2/27/2026.\"",
+    "sourceDocument": {
+      "mediaType": "application/pdf",
+      "sha256": "b51911312d433f688a24bde86014984703707fd3ddf290d7b39a4377413f9808",
+      "fileSizeBytes": 106786,
+      "pageCount": 1
+    },
+    "procedureCount": 24,
+    "pricePointCount": 120
+  },
+  "priceTypes": [
+    {
+      "id": "gmsc_medicare_rate",
+      "label": "GMSC Medicare Rate",
+      "owner": "green_mountain_surgery_center",
+      "role": "provider_rate"
+    },
+    {
+      "id": "hopd_medicare_rate",
+      "label": "HOPD Medicare Rate",
+      "owner": "hospital_outpatient_department",
+      "role": "external_comparator",
+      "note": "The PDF presents this as the hospital outpatient department Medicare comparator."
+    },
+    {
+      "id": "gmsc_charge",
+      "label": "GMSC Charge",
+      "owner": "green_mountain_surgery_center",
+      "role": "provider_charge"
+    },
+    {
+      "id": "gmsc_lowest_commercial_rate",
+      "label": "GMSC Lowest Commercial Rate",
+      "owner": "green_mountain_surgery_center",
+      "role": "provider_commercial_rate"
+    },
+    {
+      "id": "gmsc_highest_commercial_rate",
+      "label": "GMSC Highest Commercial Rate",
+      "owner": "green_mountain_surgery_center",
+      "role": "provider_commercial_rate"
+    }
+  ],
+  "procedures": [
+    {
+      "sourceRow": 1,
+      "codeSystem": "CPT",
+      "code": "45330",
+      "description": "SIGMOIDOSCOPY FLX DX W/COLLJ SPEC BR/WA IF PFRMD",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "183.47",
+          "amountCents": 18347,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "950.10",
+          "amountCents": 95010,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "832.00",
+          "amountCents": 83200,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "413.87",
+          "amountCents": 41387,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "700.00",
+          "amountCents": 70000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "codeSystem": "CPT",
+      "code": "45331",
+      "description": "SIGMOIDOSCOPY",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "506.38",
+          "amountCents": 50638,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "950.10",
+          "amountCents": 95010,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "1248.00",
+          "amountCents": 124800,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "945.99",
+          "amountCents": 94599,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "1154.54",
+          "amountCents": 115454,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "codeSystem": "CPT",
+      "code": "43239",
+      "description": "EGD TRANSORAL BIOPSY SINGLE/MULTIPLE",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "493.84",
+          "amountCents": 49384,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "926.63",
+          "amountCents": 92663,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "1560.00",
+          "amountCents": 156000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1125.95",
+          "amountCents": 112595,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "codeSystem": "CPT",
+      "code": "43235",
+      "description": "EGD",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "493.84",
+          "amountCents": 49384,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "926.63",
+          "amountCents": 92663,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "1560.00",
+          "amountCents": 156000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1125.95",
+          "amountCents": 112595,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "codeSystem": "CPT",
+      "code": "45378",
+      "description": "COLONOSCOPY",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "364.32",
+          "amountCents": 36432,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "950.10",
+          "amountCents": 95010,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "1612.00",
+          "amountCents": 161200,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1085.00",
+          "amountCents": 108500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "codeSystem": "CPT",
+      "code": "45385",
+      "description": "COLONOSCOPY",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "470.39",
+          "amountCents": 47039,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1222.56",
+          "amountCents": 122256,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "1872.00",
+          "amountCents": 187200,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1129.82",
+          "amountCents": 112982,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "codeSystem": "CPT",
+      "code": "45380",
+      "description": "COLONOSCOPY",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "470.39",
+          "amountCents": 47039,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1222.56",
+          "amountCents": 122256,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "1872.00",
+          "amountCents": 187200,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1239.86",
+          "amountCents": 123986,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "1312.06",
+          "amountCents": 131206,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "codeSystem": "CPT",
+      "code": "26055",
+      "description": "TENDON SHEATH INCISION",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "865.84",
+          "amountCents": 86584,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1642.82",
+          "amountCents": 164282,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "2356.64",
+          "amountCents": 235664,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "1974.13",
+          "amountCents": 197413,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "codeSystem": "CPT",
+      "code": "43249",
+      "description": "EGD BALLOON DILATION ESOPHAGUS <30 MM DIAM",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "887.13",
+          "amountCents": 88713,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1960.47",
+          "amountCents": 196047,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "1820.00",
+          "amountCents": 182000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "2022.66",
+          "amountCents": 202266,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "codeSystem": "CPT",
+      "code": "64721",
+      "description": "NEUROPLASTY AND-TRANSPOS MEDIAN NRV CARPAL TUNNEL",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "941.02",
+          "amountCents": 94102,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1995.02",
+          "amountCents": 199502,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "2613.52",
+          "amountCents": 261352,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1685.00",
+          "amountCents": 168500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "2145.53",
+          "amountCents": 214553,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "codeSystem": "CPT",
+      "code": "26160",
+      "description": "EXC LESION TDN SHTH-JT CAPSL HAND-FNGR",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "865.84",
+          "amountCents": 86584,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1642.82",
+          "amountCents": 164282,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "2356.64",
+          "amountCents": 235664,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "2140.92",
+          "amountCents": 214092,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "codeSystem": "CPT",
+      "code": "25111",
+      "description": "EXCISION GANGLION WRIST",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "865.84",
+          "amountCents": 86584,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1642.82",
+          "amountCents": 164282,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "2356.64",
+          "amountCents": 235664,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1685.00",
+          "amountCents": 168500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "2140.92",
+          "amountCents": 214092,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "codeSystem": "CPT",
+      "code": "25000",
+      "description": "INCISION EXTENSOR TENDON SHEATH WRIST",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "865.84",
+          "amountCents": 86584,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "1642.82",
+          "amountCents": 164282,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "2356.64",
+          "amountCents": 235664,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1685.00",
+          "amountCents": 168500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "2140.92",
+          "amountCents": 214092,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "codeSystem": "CPT",
+      "code": "45390",
+      "description": "COLONOSCOPY FLX W/ENDOSCOPIC MUCOSAL RESECTION",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "1420.97",
+          "amountCents": 142097,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "2835.78",
+          "amountCents": 283578,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "2912.00",
+          "amountCents": 291200,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1245.00",
+          "amountCents": 124500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "3239.82",
+          "amountCents": 323982,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "codeSystem": "CPT",
+      "code": "19120",
+      "description": "REMOVAL OF BREAST LESION",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "1590.28",
+          "amountCents": 159028,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "4000.24",
+          "amountCents": 400024,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "3536.00",
+          "amountCents": 353600,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1685.00",
+          "amountCents": 168500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "3625.84",
+          "amountCents": 362584,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "codeSystem": "CPT",
+      "code": "58558",
+      "description": "HYSTEROSCOPY WITH ENDOMETRIUM AND/OR POLYPECTOMY W OR W/O d&c",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "1724.08",
+          "amountCents": 172408,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "3307.24",
+          "amountCents": 330724,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "3770.00",
+          "amountCents": 377000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1685.00",
+          "amountCents": 168500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "3930.91",
+          "amountCents": 393091,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "codeSystem": "CPT",
+      "code": "19301",
+      "description": "MASTECTOMY PARTIAL",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "1590.28",
+          "amountCents": 159028,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "4000.24",
+          "amountCents": 400024,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "4394.00",
+          "amountCents": 439400,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "1685.00",
+          "amountCents": 168500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "3678.42",
+          "amountCents": 367842,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "codeSystem": "CPT",
+      "code": "67108",
+      "description": "RPR RETINAL DTCHMNT W/VITRECTOMY ANY METH",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "2186.13",
+          "amountCents": 218613,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "4222.95",
+          "amountCents": 422295,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "5642.00",
+          "amountCents": 564200,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "2365.00",
+          "amountCents": 236500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "4984.38",
+          "amountCents": 498438,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "codeSystem": "CPT",
+      "code": "67042",
+      "description": "VITRECTOMY PARS PLANA REMOVE INT MEMB RETINA",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "2186.13",
+          "amountCents": 218613,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "4222.95",
+          "amountCents": 422295,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "5642.00",
+          "amountCents": 564200,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "2365.00",
+          "amountCents": 236500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "4984.38",
+          "amountCents": 498438,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "codeSystem": "CPT",
+      "code": "58563",
+      "description": "HYSTEROSCOPY WITH ENDOMETRIAL ABLATION",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "2277.07",
+          "amountCents": 227707,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "5110.80",
+          "amountCents": 511080,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "6760.00",
+          "amountCents": 676000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "2175.00",
+          "amountCents": 217500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "5395.49",
+          "amountCents": 539549,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "codeSystem": "CPT",
+      "code": "58661",
+      "description": "LAPAROSCOPY-PARTIAL OR TOTAL SALPINGECTOMY OR OOPHORECTOMY",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "3006.57",
+          "amountCents": 300657,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "6176.47",
+          "amountCents": 617647,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "7514.00",
+          "amountCents": 751400,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "2665.00",
+          "amountCents": 266500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "6854.98",
+          "amountCents": 685498,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "codeSystem": "CPT",
+      "code": "58662",
+      "description": "LAPAROSCOPY EXCISION OF ADNEXAL MASS/OVARIAN CYST",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "3006.57",
+          "amountCents": 300657,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "6176.47",
+          "amountCents": 617647,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "6760.00",
+          "amountCents": 676000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "2665.00",
+          "amountCents": 266500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "6854.98",
+          "amountCents": 685498,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "codeSystem": "CPT",
+      "code": "19303",
+      "description": "MASTECTOMY SIMPLE COMPLETE",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "2825.27",
+          "amountCents": 282527,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "6783.99",
+          "amountCents": 678399,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "8450.00",
+          "amountCents": 845000,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "2175.00",
+          "amountCents": 217500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "7196.71",
+          "amountCents": 719671,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "codeSystem": "CPT",
+      "code": "19318",
+      "description": "BREAST REDUCTION",
+      "prices": [
+        {
+          "priceType": "gmsc_medicare_rate",
+          "priceTypeLabel": "GMSC Medicare Rate",
+          "amount": "2825.27",
+          "amountCents": 282527,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "hopd_medicare_rate",
+          "priceTypeLabel": "HOPD Medicare Rate",
+          "amount": "6783.99",
+          "amountCents": 678399,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_charge",
+          "priceTypeLabel": "GMSC Charge",
+          "amount": "9074.00",
+          "amountCents": 907400,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_lowest_commercial_rate",
+          "priceTypeLabel": "GMSC Lowest Commercial Rate",
+          "amount": "2365.00",
+          "amountCents": 236500,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        },
+        {
+          "priceType": "gmsc_highest_commercial_rate",
+          "priceTypeLabel": "GMSC Highest Commercial Rate",
+          "amount": "7596.26",
+          "amountCents": 759626,
+          "currency": "USD",
+          "effectiveDate": "2026-02-27",
+          "sourceUrl": "https://cms.jcloudpro.com/storage/clients/greenmountainsc_pro/file_1772548942526_19582.pdf",
+          "sourcePage": 1
+        }
+      ]
+    }
+  ]
+}

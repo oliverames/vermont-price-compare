@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "provider": {
+    "id": "vermont-diagnostic-imaging",
+    "name": "Vermont Diagnostic Imaging",
+    "facilityType": "independent_diagnostic_imaging_center",
+    "websiteUrl": "https://vermontdiagnosticimaging.com/",
+    "address": {
+      "street": "426 Industrial Avenue, Suite 131",
+      "city": "Williston",
+      "state": "VT",
+      "postalCode": "05495"
+    }
+  },
+  "catalog": {
+    "title": "CT Scan",
+    "publicationType": "official_service_webpage",
+    "extractionStatus": "complete_for_published_price_page",
+    "catalogScope": "Every named service with a dollar amount on the current official CT service page.",
+    "serviceCatalogCompleteness": "not_claimed_by_source",
+    "serviceCatalogCompletenessNote": "The source publishes one self-pay price. Its separate cost estimator requires a request and is not a browsable price catalog.",
+    "billingScope": "The source does not state which billing components the self-pay price includes.",
+    "landingPageUrl": "https://vermontdiagnosticimaging.com/services/ct-scan",
+    "sourceUrl": "https://vermontdiagnosticimaging.com/services/ct-scan",
+    "costEstimatorUrl": "https://vermontdiagnosticimaging.com/cost-estimator.php",
+    "retrievedOn": "2026-08-05",
+    "effectiveDate": null,
+    "effectiveDateBasis": "The official page does not publish an effective or update date.",
+    "recordCount": 1,
+    "pricePointCount": 1,
+    "namedServiceRecordCount": 1,
+    "exactCptRecordCount": 0
+  },
+  "priceTypes": [
+    {
+      "id": "discounted_self_pay_price",
+      "label": "Discounted self-pay price",
+      "role": "cash_price"
+    }
+  ],
+  "items": [
+    {
+      "sourceRow": 1,
+      "description": "CT coronary calcium scoring",
+      "codes": [],
+      "setting": "outpatient",
+      "billingClass": "",
+      "publicationScope": "named_service_without_published_code",
+      "codeAssignmentStatus": "source_does_not_publish_code",
+      "priceBasis": "discounted_self_pay_price",
+      "prices": {
+        "cashValues": [
+          {
+            "amount": "220.00",
+            "label": "Discounted self-pay price",
+            "currency": "USD"
+          }
+        ]
+      },
+      "sourcePage": "https://vermontdiagnosticimaging.com/services/ct-scan"
+    }
+  ]
+}

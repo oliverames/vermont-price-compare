@@ -1,0 +1,5 @@
+hospital_name,last_updated_on,version,location_name,hospital_address
+Tall Fixture Hospital,2026-08-05,3.0.0,Tall Fixture Hospital,"2 Main Street, Montpelier, VT"
+description,code|1,code|1|type,setting,billing_class,payer_name,plan_name,modifiers,standard_charge|gross,standard_charge|discounted_cash,standard_charge|negotiated_dollar,standard_charge|min,standard_charge|max
+Tall MRI,73721,CPT,outpatient,facility,Payer Alpha,Plan A,TC,500,400,300,250,350
+Tall MRI,73721,CPT,outpatient,facility,Payer Beta,Plan B,TC,500,400,325,250,350
