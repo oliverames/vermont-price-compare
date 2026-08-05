@@ -1,0 +1,10 @@
+{
+  "name": "vermont-price-compare",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static demo for comparing published Vermont healthcare procedure prices.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check app.js && node --check data.js && node --test"
+  }
+}

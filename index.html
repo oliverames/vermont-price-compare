@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00467b">
+  <meta name="description" content="Search five common procedures and compare published prices from Vermont hospitals and selected outpatient centers.">
+  <title>Vermont Price Compare</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to the price comparison</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="./" aria-label="Vermont Price Compare home">Vermont Price Compare</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+        <a href="#how-prices-work">How Prices Work</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="page-title">
+      <svg class="ridge-lines" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 76C72 34 118 38 175 64s104 32 169 7 118-37 187-10 120 38 189 6 113-38 181-16 116 35 187 5 111-29 175-3 108 32 177-2"></path>
+        <path d="M0 91C74 49 120 54 177 78s104 28 169 4 118-33 187-7 120 34 189 4 113-34 181-13 116 31 187 3 111-25 175-1 108 28 177-4"></path>
+        <path d="M0 106C76 65 122 70 179 92s104 25 169 3 118-29 187-5 120 31 189 3 113-30 181-11 116 28 187 2 111-22 175 0 108 24 177-6"></path>
+        <path d="M0 121C78 81 124 86 181 106s104 22 169 2 118-26 187-4 120 28 189 2 113-27 181-9 116 25 187 1 111-19 175 2 108 21 177-8"></path>
+      </svg>
+      <div class="hero-inner">
+        <h1 id="page-title">Compare published healthcare prices across Vermont.</h1>
+        <p class="hero-lede">Search a procedure to see prices from Vermont hospitals and selected outpatient centers in one place.</p>
+        <form id="search-form" class="procedure-search" role="search" novalidate>
+          <label for="procedure-search">What procedure do you need?</label>
+          <div class="search-layout">
+            <div class="combobox">
+              <input id="procedure-search" name="procedure" type="search" role="combobox" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false" aria-describedby="search-help search-error" autocomplete="off" spellcheck="false" value="Colonoscopy">
+              <ul id="search-suggestions" class="search-suggestions" role="listbox" hidden></ul>
+            </div>
+            <button class="primary-button" type="submit">Compare Prices</button>
+          </div>
+          <p id="search-help" class="search-help">
+            <span>Try:</span>
+            <button type="button" data-procedure="mammogram">Mammogram</button>,
+            <button type="button" data-procedure="mri-knee">MRI of knee</button>,
+            <button type="button" data-procedure="ct-abdomen-pelvis">CT scan</button>,
+            <button type="button" data-procedure="carpal-tunnel">Carpal tunnel release</button>
+          </p>
+          <p id="search-error" class="search-error" role="alert"></p>
+        </form>
+        <div class="price-notice" role="note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 10.5v5M12 7.5h.01"></path></svg>
+          <p>Published prices are <strong>not a bill estimate.</strong> Your insurance, deductible, and care needs affect what you pay.</p>
+        </div>
+      </div>
+    </section>
+    <section id="results" class="results-section" aria-labelledby="results-title">
+      <div class="results-heading">
+        <div>
+          <h2 id="results-title" tabindex="-1">Screening colonoscopy without biopsy</h2>
+          <p id="procedure-meta" class="procedure-meta">CPT 45378 · 2026 published prices</p>
+        </div>
+        <p id="results-summary" class="results-summary" aria-live="polite"></p>
+      </div>
+      <div class="result-controls" role="group" aria-label="Price comparison controls">
+        <label>
+          <span>Price type</span>
+          <select id="price-type"></select>
+        </label>
+        <label>
+          <span>Sort</span>
+          <select id="sort-order">
+            <option value="low">Lowest first</option>
+            <option value="high">Highest first</option>
+            <option value="name">Provider name</option>
+          </select>
+        </label>
+      </div>
+      <div class="comparison-group" aria-labelledby="comparison-title">
+        <div class="group-heading">
+          <div>
+            <h3 id="comparison-title">Comparable Prices</h3>
+            <p id="comparison-description"></p>
+          </div>
+        </div>
+        <div class="result-list" role="region" aria-label="Comparable provider prices">
+          <div class="result-columns" aria-hidden="true">
+            <span>Rank</span><span>Provider</span><span>Location</span><span>Price</span><span>Price basis</span><span></span>
+          </div>
+          <div id="comparable-results" role="list"></div>
+        </div>
+        <button id="show-all" class="secondary-button show-all-button" type="button" hidden></button>
+      </div>
+      <section id="other-prices" class="other-prices" aria-labelledby="other-prices-title" hidden>
+        <div class="group-heading">
+          <div>
+            <h3 id="other-prices-title">Other Published Prices</h3>
+            <p>These prices use a different billing component, so the site does not rank them with the totals above.</p>
+          </div>
+        </div>
+        <div id="other-results" class="result-list standalone-list" role="list"></div>
+      </section>
+      <details id="incomplete-prices" class="incomplete-prices" hidden>
+        <summary id="incomplete-summary"></summary>
+        <div id="incomplete-results" class="incomplete-list"></div>
+      </details>
+    </section>
+    <section id="how-prices-work" class="method-section" aria-labelledby="method-title">
+      <div class="method-inner">
+        <div class="method-intro">
+          <h2 id="method-title">How These Prices Work</h2>
+          <p>A CPT code identifies a specific medical service. Matching the code and price type makes the comparison useful.</p>
+        </div>
+        <dl class="price-definitions">
+          <div>
+            <dt>Total Gross Charge</dt>
+            <dd>The hospital and hospital-employed physician charges shown in Vermont's 2026 report. Insurance discounts are not applied.</dd>
+          </div>
+          <div>
+            <dt>Discounted Cash Price</dt>
+            <dd>A provider's published cash amount for the coded service. The file may not identify every billing component, and another provider may bill separately.</dd>
+          </div>
+          <div>
+            <dt>Your Estimate</dt>
+            <dd>Ask the provider and your health plan for an estimate that uses your exact CPT code, network, deductible, and coinsurance.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <section id="sources" class="sources-section" aria-labelledby="sources-title">
+      <div class="sources-inner">
+        <h2 id="sources-title">Sources and Limits</h2>
+        <p>The five examples use public files that were available on August 5, 2026. This demo does not include every Vermont clinician, independent imaging center, or health plan rate.</p>
+        <ul>
+          <li><a href="https://www.healthvermont.gov/systems/hospitals-health-systems/hospital-report-cards" target="_blank" rel="noopener noreferrer">Vermont Department of Health Hospital Report Cards</a> for statewide CPT gross charges.</li>
+          <li><a href="https://www.uvmhealth.org/patients-visitors/billing-insurance/price-transparency" target="_blank" rel="noopener noreferrer">Provider Price Transparency Files</a> for selected discounted cash prices.</li>
+          <li><a href="https://greenmountainsurgery.com/billing-insurance.php" target="_blank" rel="noopener noreferrer">Green Mountain Surgery Center Billing Information</a> for separate facility charges.</li>
+          <li><a href="https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency" target="_blank" rel="noopener noreferrer">CMS Hospital Price Transparency Guidance</a> for an explanation of published hospital charges.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <p>Demo data updated August 5, 2026.</p>
+      <p>This prototype is not affiliated with any provider or government agency and does not provide medical advice.</p>
+    </div>
+    <a href="#main-content">Return to Search</a>
+  </footer>
+</body>
+</html>
