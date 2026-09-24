@@ -1396,6 +1396,37 @@ def parse_overrides(values: list[str]) -> dict[str, Path]:
     return overrides
 
 
+def check_manual_sources(
+    providers: list[dict[str, object]], overrides: dict[str, Path], args: argparse.Namespace
+) -> dict[str, Path]:
+    """Resolve browser-only inputs before opening the work DB or writing artifacts."""
+    resolved = dict(overrides)
+    for provider in providers:
+        if provider.get("availability") != "available_browser_only":
+            continue
+        provider_id = clean_text(provider["id"])
+        source = resolved.get(provider_id)
+        if source is None and (args.offline or not args.refresh):
+            source = cache_path_for(args.cache_dir, provider)
+        instruction = (
+            f"{provider_id} requires a verified browser-downloaded source. "
+            f"Download the official file from {provider.get('officialPageUrl')} and rerun with "
+            f'--input "{provider_id}=/absolute/path/to/source.csv"'
+        )
+        if source is None or not source.is_file() or source.stat().st_size == 0:
+            raise CatalogBuildError(instruction)
+        # Reject empty files and browser error pages before destructive build work.
+        # Full streaming ingestion still validates the remaining records normally.
+        try:
+            with contextlib.closing(iter_csv_items(source, clean_text(provider.get("format")), {})) as items:
+                if next(items, None) is None:
+                    raise CatalogBuildError("Source contains no item records")
+        except (OSError, ValueError, csv.Error, CatalogBuildError) as error:
+            raise CatalogBuildError(f"Invalid manual source {source}: {error}. {instruction}") from error
+        resolved[provider_id] = source
+    return resolved
+
+
 def run_build(args: argparse.Namespace) -> dict[str, object]:
     provider_manifest, providers = load_providers(args.providers)
     aliases = load_aliases(args.aliases)
@@ -1410,6 +1441,8 @@ def run_build(args: argparse.Namespace) -> dict[str, object]:
     unknown_overrides = set(overrides) - {clean_text(provider["id"]) for provider in providers}
     if unknown_overrides:
         raise CatalogBuildError(f"Input override has no selected provider: {', '.join(sorted(unknown_overrides))}")
+
+    overrides = check_manual_sources(providers, overrides, args)
 
     connection = connect_database(args.work_db)
     results: list[dict[str, object]] = []

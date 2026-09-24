@@ -105,12 +105,16 @@ Run the streaming builder from the repository root:
 /opt/homebrew/bin/python3 scripts/build_catalog.py
 ```
 
-Rutland Regional Medical Center currently rejects direct command-line downloads. On a fresh machine, download its official CSV in a browser and provide the verified local path:
+Rutland Regional Medical Center rejects the builder’s current direct download request (HTTP 403, verified September 24, 2026). Before a rebuild that includes Rutland, open its [official pricing page](https://www.rrmc.org/patient-visitors/billing-insurance/pricing-estimates/) in a browser, download the standard-charges CSV, and provide the verified local path:
 
 ```bash
 /opt/homebrew/bin/python3 scripts/build_catalog.py \
   --input "rutland-regional-medical-center=/absolute/path/to/030183483_RutlandRegionalMedicalCenter_standardcharges.csv"
 ```
+
+The builder checks browser-only inputs before opening the work database or writing catalogue artifacts. Missing, empty, or non-CSV inputs stop the build with a concrete `--input` instruction, even with `--allow-source-errors`. A saved browser error page is not a valid source. The preflight checks the CMS header and first item; normal streaming ingestion validates the rest.
+
+Repeat the same `--input` option when resuming a build. An existing valid source cache can also be reused in normal or `--offline` mode. `--refresh` requires a new explicit local override for Rutland, unless `--offline` is also set. Builds selecting only other providers do not require Rutland input. Request headers and download policy are unchanged.
 
 The builder writes deployable artifacts to `catalog/`. Raw hospital files stay in `.cache/catalog/sources/` or at the supplied local path. Git excludes them because they are large source records that providers can replace independently.
 
